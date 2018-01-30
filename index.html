@@ -16,6 +16,7 @@
         .piano{
             position: absolute;
             margin: 0 auto;
+            width:500px;
 
         }
         .white{
@@ -23,13 +24,9 @@
             margin:0 auto;
             height:300px;
             width:50px;
-
-            outline: none;
-
             position: relative;
-
             padding: 0px;
-            border: 1px solid #fff;
+            border: 1px solid #a59f9f;
             border-radius: 0px 0px 4px 4px;
             cursor: pointer;
             transform: none;
@@ -103,8 +100,8 @@
 </div>
 
 <script >
-    $("button").click(()=>{
-        const A=$(this).attr("data-key");
+    $("button").click(()=>
+    const A=$(this).attr("data-key");
     console.log(A);
     var selector=('#' + A);
     console.log(selector);
