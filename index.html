@@ -1,124 +1,62 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title>Margarita Saltanovska</title>
     <style>
-        body {
-            margin: 0px;
-            padding: 0px;
-            background: url(https://afisha.ngs.ru/afisher/novosibirsk/pictures/posters/112935/112935_yandex2.jpg?origin_base_url=https://gorodskoyportal.ru);
+        body{
+            padding:0px;
+            margin:0px;
         }
-
-        .container {
-
-            height: 1000px;
-        }
-
-        .piano {
+        #header{
+            width:1920px;
+            height:1000px;
+            background-image: url(Фриланс-для-начинающих.jpg);
             position: absolute;
-            width: 700px;
-            margin: 0 auto;
         }
-
-        .white {
-            float: left;
-            margin: 0 auto;
-            height: 300px;
-            width: 50px;
-            position: relative;
-            padding: 0px;
-            border: 1px solid #a59f9f;
-            border-radius: 0px 0px 4px 4px;
-            cursor: pointer;
-            background:white ;
-        / /* transform: none;*/
-        /
-        }
-
-        .black {
-            display: block;
+        #blue{
+            width:200px;
+            height:200px;
+            background:blue;
+            margin-left:100px;
+            margin-top:100px;
             position: absolute;
-
-            height: 180px;
-
-            background: black;
-            color: black;
-            margin-left: 30px;
         }
+        p{
+           position: relative;
+            color:black;
+            font-size:60px;
+            font-family: "Ubuntu-Bold";
+            font-weight: bold;
+             padding: 0px;
+            margin-top: 6px;
 
+        }
+        #photo{
+            background-image: url(photo.png);
+            width: 128px;
+            height: 128px;
+            position:relative;
+            margin-top: 70px;
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="piano">
-        <button data-key="C3" class="white">C3</button>
-        <button data-key="D3" class="white">D3</button>
-        <button data-key="E3" class="white">E3</button>
-        <button data-key="F3" class="white">F3</button>
-        <button data-key="G3" class="white">G3</button>
-        <button data-key="A3" class="white">A3</button>
-        <button data-key="B3" class="white">B3</button>
-        <button data-key="C4" class="white">C4</button>
-        <button data-key="D4" class="white">D4</button>
-        <button data-key="E4" class="white">E4</button>
-        <button data-key="F4" class="white">F4</button>
-        <button data-key="A4" class="white">A4</button>
-        <button data-key="B4" class="white">B4</button>
-        <button data-key="C5" class="white">C5</button>
-        <button data-key="Db3" class="black">df</button>
-        <button data-key="Eb3" class="black">df</button>
-        <button data-key="Gb3" class="black">df</button>
-        <button data-key="Bb3" class="black">df</button>
-        <button data-key="Ab3" class="black">df</button>
-        <button data-key="Db4" class="black">df</button>
-        <button data-key="Eb4" class="black">df</button>
-        <button data-key="Gb4" class="black">df</button>
-        <button data-key="Bb4" class="black">df</button>
-        <button data-key="Ab4" class="black">df</button>
-        <audio id="C3" src="https://online-pianino.ru/grandpiano/C3.mp3">C3</audio>
-        <audio id="Db3" src="https://online-pianino.ru/grandpiano/Db3.mp3">Db3</audio>
-        <audio id="D3" src="https://online-pianino.ru/grandpiano/D3.mp3">D3</audio>
-        <audio id="E3" src="https://online-pianino.ru/grandpiano/E3.mp3">E3</audio>
-        <audio id="Eb3" src="https://online-pianino.ru/grandpiano/Eb3.mp3">Eb3</audio>
-        <audio id="Gb3" src="https://online-pianino.ru/grandpiano/Gb3.mp3">Gb3</audio>
-        <audio id="B3" src="https://online-pianino.ru/grandpiano/B3.mp3">B3</audio>
-        <audio id="C4" src="https://online-pianino.ru/grandpiano/C4.mp3">C4</audio>
-        <audio id="Db4" src="https://online-pianino.ru/grandpiano/Db4.mp3">Db4</audio>
-        <audio id="F3" src="https://online-pianino.ru/grandpiano/F3.mp3">F3</audio>
-        <audio id="G3" src="https://online-pianino.ru/grandpiano/G3.mp3">G3</audio>
-        <audio id="A3" src="https://online-pianino.ru/grandpiano/A3.mp3">A3</audio>
-        <audio id="Bb3" src="https://online-pianino.ru/grandpiano/Bb3.mp3">Bb3</audio>
-        <audio id="Ab3" src="https://online-pianino.ru/grandpiano/Ab3.mp3">Ab3</audio>
-        <audio id="D4" src="https://online-pianino.ru/grandpiano/D4.mp3">D4</audio>
-        <audio id="Eb4" src="https://online-pianino.ru/grandpiano/Eb4.mp3">Eb4</audio>
-        <audio id="E4" src="https://online-pianino.ru/grandpiano/E4.mp3">E4</audio>
-        <audio id="F4" src="https://online-pianino.ru/grandpiano/F4.mp3">F4</audio>
-        <audio id="Gb4" src="https://online-pianino.ru/grandpiano/Gb4.mp3">Gb4</audio>
-        <audio id="G4" src="https://online-pianino.ru/grandpiano/G4.mp3">G4</audio>
-        <audio id="Bb4" src="https://online-pianino.ru/grandpiano/Bb4.mp3">Bb4</audio>
-        <audio id="Ab4" src="https://online-pianino.ru/grandpiano/Ab4.mp3">Ab4</audio>
-        <audio id="A4" src="https://online-pianino.ru/grandpiano/A4.mp3">A4</audio>
-        <audio id="B4" src="https://online-pianino.ru/grandpiano/B4.mp3">B4</audio>
-        <audio id="C5" src="https://online-pianino.ru/grandpiano/C5.mp3">C5</audio>
+<header id="header">
+
+    <div id="blue">
+
+        <div id="photo"></div>
+        <p>ОБО МНЕ</p>
+        <p>Меня зовут Маргарита Салтановская. Я начинающий FRONTEND разработчик.
+        </p>
     </div>
-</div>
 
-<script>
 
-    $("button").click(function() {
-        const A = $(this).attr("data-key");
-
-        console.log(A);
-
-        var selector = ('#' + A);
-      //  var selector = ('#' + A);
-        console.log(selector);
-        $(selector)[0].play();
-    });
-</script>
+</header>
 
 </body>
 </html>
